@@ -1,26 +1,25 @@
-# owasp-juice-shop-security-testing
- Hands-on web application security testing aligned with Owasp Top 10 vulnerabilites.
+# Azure Sentinel based Home Lab
 
- The main motive is to perform a WebApp Pentest aligned with the Owasp Top 10 vulnerabilites with least use of automation.
+## Objective:
+To Build a cloud-based SIEM lab using Microsoft Sentinel to simulate 
+real SOC analyst workflow i.e log ingestion, detection rule creation, 
+incident triage and response.
 
-# Environment used:
- Machine: Kali VM
- Containerization: Docker
- Target Application: Owasp Juice Shop
+## Architecture:
+- Microsoft Sentinel + Log Analytics Workspace
+- Windows VM (intentionally exposed on RDP for log generation)
+- Data sources: Windows Security Events and Azure Activity Logs
 
-# Scope:
- Black-box style  testing
- Focus on Owasp Top 10 vulnerabilities
- Manual testing using Burp Suite and browser-based techniques
- No automated vulnerability scanners used for exploitation
+## Process:
+- Connected 2 data sources via Azure Monitor Agent and DCR
+- Wrote 2 custom KQL analytics rules (new user creation and suspicious process detection)
+- Performed end-to-end incident triage in Sentinel
 
-# Methodology
- Explored the WebApp to find attack surface like forms or pages accepting user input
- Manual testing for common vulnerabilites
- Observing how the application reacts to those payloads / malicious inputs
- Finding basic mitigation techniques which could be applied
+## KQL Rules
+(./kql-queries/)
 
-# Key Learning Outcomes
- Docker-based deployment of vulnerable applications
- Practical understanding of common web app vulnerabilities
- Hands-on experience with Owasp Top 10 categories
+## Screenshots
+(./screenshots/)
+
+## Tools Used:
+Microsoft Sentinel, Log Analytics, KQL, Azure Monitor and Windows Vm
