@@ -1,0 +1,5 @@
+- SecurityEvent
+-| where EventID == 4688
+-| where NewProcessName has_any ("cmd.exe", "powershell.exe", "wscript.exe","mshta.exe", "certutil.exe", "regsvr32.exe")
+-| where Account !has "SYSTEM"
+-| project TimeGenerated, Account, NewProcessName, ParentProcessName, Computer
