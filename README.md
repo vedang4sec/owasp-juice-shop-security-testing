@@ -16,10 +16,10 @@ incident triage and response.
 - Performed end-to-end incident triage in Sentinel
 
 ## KQL Rules
-(./kql-queries/)
+(kql-queries/)
 
 ## Screenshots
-(./screenshots/)
+(screenshots/)
 
 ## Tools Used:
 Microsoft Sentinel, Log Analytics, KQL, Azure Monitor and Windows Vm
