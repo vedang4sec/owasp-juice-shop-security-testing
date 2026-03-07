@@ -15,11 +15,5 @@ incident triage and response.
 - Wrote 2 custom KQL analytics rules (new user creation and suspicious process detection)
 - Performed end-to-end incident triage in Sentinel
 
-## KQL Rules
-(kql-queries/)
-
-## Screenshots
-(screenshots/)
-
 ## Tools Used:
 Microsoft Sentinel, Log Analytics, KQL, Azure Monitor and Windows Vm
